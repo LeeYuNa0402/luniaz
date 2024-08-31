@@ -259,6 +259,7 @@ header #rnb_control_pc {
 header #rnb_control_pc i {
   color: #fff;
   font-size: 23px;
+  vertical-align: middle;
 }
 header #rnb_control_pc:hover {
   filter: brightness(1.1);
@@ -468,6 +469,7 @@ header .lnb ul li.sns .discord:hover {
 #sec1 .scroll i {
   display: block;
   border: 2px solid #fff;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 30px auto 0;
   padding: 1rem 0.4rem;
@@ -756,7 +758,8 @@ header .lnb ul li.sns .discord:hover {
   }
   header .lnb ul li {
     border-bottom: 1px solid;
-    border-image: linear-gradient(to right, black 0%, #50465f 50%, black 100%);
+    -o-border-image: linear-gradient(to right, black 0%, #50465f 50%, black 100%);
+       border-image: linear-gradient(to right, black 0%, #50465f 50%, black 100%);
     border-image-slice: 1;
     height: 80px;
   }
@@ -828,5 +831,3 @@ header .lnb ul li.sns .discord:hover {
     font-size: 4.4vw;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
