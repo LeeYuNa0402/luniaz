@@ -1,11 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>모든 이야기의 종착지,신대륙마그마포라</title>
+   <link rel="shortcut icon" href="https://file.valofe.com/Valofe_file/web/favicon/luniaz-revival_favicon.ico" type="image/x-icon">
+
+   <script src="//file.valofe.com/Valofe_file/web/vfun/js/jquery-3.6.4.min.js"></script>
+
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="stylesheet" href="./css/style.css">
+
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="./js/style.js"></script>
 </head>
 <body>
-   
+
+    <div id="wrapper">
+        <img class="cha main-cha-l" src="./images/main/cha-l-min.png" alt="character">
+        <img class="cha main-cha-r" src="./images/main/cha-r-min.png" alt="character">
+
+        <div class="btn-shadow" onclick="fnToggleNav();"></div>
+
+        <div id="header-mb" onclick="fnToggleNav();">
+            <img class="mb-logo" src="https://file.valofe.com/Valofe_file/web/luniaz-revival/images/common/logo-min.png" alt="luniaz-revival">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <header id="header">
+            <div id="rnb_control_pc" onclick="fnToggleNav();"><i class="fas fa-chevron-right"></i></div>
+            <a href="javascript:void(0);" id="mobileGnbClose" onclick="fnToggleNav();"></a>
+
+            <div class="lnb">
+                <img class="mb-logo" src="./images/main/logo-big-min.png" alt="logo">
+                <img class="lnb-cha" src="./images/common/cha-min.png" alt="character">
+
+                <ul>
+                    <li class="event0 on"><a class="noto" href="javascript:void(0)" onclick="fnGotoSec('#main')">Main</a></li>
+                    <li class="event1"><a class="noto" href="javascript:void(0)" onclick="fnGotoSec('#sec1')">Pre-create Characters Benefit</a></li>
+                    <li class="event2"><a class="noto" href="javascript:void(0)" onclick="fnGotoSec('#sec2')">GRAND Opening Benefit</a></li>
+                    <li class="sns">
+                        <a class="home" href="/main" target="_blank"></a>
+                        <a class="facebook" href="https://www.facebook.com/luniazrevival" target="_blank"></a>
+                        <a class="discord" href="https://discord.gg/KzGxARJwyX" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a class="top" href="javascript:void(0);" onclick="goSec('wrapper')"><i class="fas fa-chevron-up"></i>TOP</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="dont-show-today noto"><a href="javascript:void(0);" onclick="showToday()">Don't show today</a></div>
+        </header>
+
+        <section id="main">
+            <div class="leaf-wrap">
+                <div class="leaf-wrap-fade">
+                    <img class="leaf-l" src="./images/main/leaf-l-min.png" alt="leaf">
+                    <img class="leaf-r" src="./images/main/leaf-r-min.png" alt="leaf">
+                </div>
+            </div>
+
+            <div class="row-w">
+                <div class="main-tit-wrap">
+                    <img class="logo" data-aos="zoom-in" data-aos-delay="900" data-aos-duration="800" data-aos-anchor="#main" src="./images/main/main-logo-min.png" alt="logo">
+
+                    <div class="main-tit">
+                        <p class="open-date" data-aos="fade-left" data-aos-delay="200" data-aos-duration="600" data-aos-anchor="#main">02. 08. 2023</p>
+                        <img data-aos="flip-left" data-aos-delay="500" data-aos-duration="1000" data-aos-anchor="#main" src="./images/main/tit-en-min.png" alt="GRAND OPENING">
+                        <p class="pre-cha-date" data-aos="fade-right" data-aos-delay="200" data-aos-duration="600" data-aos-anchor="#main">Pre-create Characters: 20.07 ~ 31.07</p>
+                    </div>
+
+                    <a class="destination" href="#sec1" data-aos="zoom-in" data-aos-delay="900" data-aos-duration="800" data-aos-anchor="#main">Check the benefits</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec1">
+            <div class="row-w">
+                <h2 class="sub-tit" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800" data-aos-anchor="#sec1">
+                    <span>Pre-create</span> Characters Benefits</h2>
+
+                <div class="cont" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800" data-aos-anchor="#sec1">
+                    <ul class="item-wrap">
+                        <li>
+                            <span>
+                                <img src="./images/sec1/item01-min.png" alt="Inventory expansion by 25 slots (permanent) 1EA">
+                            </span>
+                            <p class="noto">Inventory expansion by 25 slots <br> (permanent) 1EA</p>
+                        </li>
+                        <li >
+                            <span>
+                                <img src="./images/sec1/item02-min.png" alt="Red dragon summoning flute 10EA">
+                            </span>
+                            <p class="noto">Red dragon summoning flute <br> 10EA</p>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="./images/sec1/item03-min.png" alt="EXP 300% up (3hours) 1EA">
+                            </span>
+                            <p class="noto">EXP 300% up (3hours) <br> 1EA</p>
+                        </li>
+                    </ul>
+                    <a class="destination" href="javascript:void(0);">Click to participate</a>
+                </div>
+
+                <div class="scroll noto" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" data-aos-anchor="#sec1">Scroll down to see grand opening rewards<i class="fas fa-angle-double-down"></i></div>
+            </div>
+
+            <div class="cha-wrap" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800" data-aos-anchor="#sec1" >
+                <img class="cha cha-l" src="./images/sec1/cha-l-min.png" alt="character">
+            </div>
+
+            <div class="cha-wrap2" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800" data-aos-anchor="#sec1" >
+                <img class="cha cha-r" src="./images/sec1/cha-r-min.png" alt="character">
+            </div>
+        </section>
+
+        <section id="sec2">
+            <div class="row-w">
+                <div class="tit-wrap">
+                    <h2 class="sub-tit" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800" data-aos-anchor="#sec2"><span>02.08</span> Grand Opening Benefits</h2>
+                    <p class="period" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800" data-aos-anchor="#sec2">Period: 02~15. 08. 2023</p>
+                </div>
+
+                <div class="cont" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" data-aos-anchor="#sec2">
+                    <ul class="item-wrap">
+                        <li >
+                            <span>
+                                <img src="./images/sec2/item04-min.png" alt="EXP 500% up (3hours) 1EA">
+                            </span>
+                            <p class="noto">EXP 500% up (3hours) <br> 1EA</p>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="./images/sec2/item05-min.png" alt="Character Slot Plus Card 1EA">
+                            </span>
+                            <p class="noto">Character Slot Plus Card <br> 1EA</p>
+                        </li>
+                        <li>
+                            <span>
+                                <img src="./images/sec2/item06-min.png" alt="GM’s Love Potion Set">
+                            </span>
+                            <p class="noto">GM’s Love Potion Set</p>
+                        </li>
+                    </ul>
+
+                    <p class="more-home">※  For more events, check the Lunia website  ( LUNIA Home : <a href="/main" target="_self"><img src="./images/sec2/home-min.png"> Click</a> )</p>
+
+                    <a class="destination" href="/customer/download" target="_self">Continue Game Download</a>
+                </div>
+
+            </div>
+
+            <div class="cha-wrap3" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800" data-aos-anchor="#sec2">
+                <img class="cha cha-r" src="./images/sec2/cha-min.png" alt="character">
+            </div>
+        </section>
+    </div>
+
+<script>
+    AOS.init();
+</script>
+
 </body>
 </html>
